@@ -1,27 +1,92 @@
 <!DOCTYPE html>
 <html lang="en" translate="no">
-  <head>
-    <!-- customize head -->
-    <meta charset="utf-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1" >
-    <meta name="referrer" content="same-origin" >
-    <meta name="generator" content="AList V3" >
-    <meta name="theme-color" content="#000000" >
-    <meta name="google" content="notranslate" >
-    <meta name="apple-mobile-web-app-capable" content="yes" >
-    <meta name="apple-mobile-web-app-title" content="AList" >
-    <link       rel="apple-touch-icon"
-      href="https://jsd.nn.ci/gh/alist-org/logo@main/logo.png"
-    >
-    <script       src="https://g.alicdn.com/IMM/office-js/1.1.5/aliyun-web-office-sdk.min.js"
-      async
-    ></script>
-    <link       rel="shortcut icon"
-      type="image/ico"
-      href="https://jsd.nn.ci/gh/alist-org/logo@main/logo.svg"
-    >
-    <title>Loading...</title>
-    <script>
+ <head> 
+  <!-- customize head --> 
+  <style>
+.hope-ui-light {
+    background-image: url("https://img.mjj.today/2023/05/03/bfa2029cdebe6a8221d4eca5d5933003.png") !important;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position-x:center;
+}
+.hope-ui-dark {
+    background-image: url("https://img.mjj.today/2023/05/03/bfa2029cdebe6a8221d4eca5d5933003.png") !important;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position-x:center;
+}
+
+.hope-ui-light .obj-box::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px !important;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+}
+
+
+.hope-ui-light .obj-box {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+
+.hope-ui-light .hope-c-PJLV-ieGICkp-css {
+    background-color: #e1f0ffeb !important/*白天设置布局图标颜色*/
+}
+
+.hope-ui-dark .hope-c-PJLV-ieGICkp-css {
+    background-color: #26292b !important/*晚上设置布局图标颜色*/
+}
+
+.hope-ui-dark {
+    background-color: #555555 !important /*暗色模式背景色*/
+}
+
+/*标题栏*/
+.hope-ui-light .hope-breadcrumb {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 10px !important;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+}
+
+
+/*白天模式 搜索按钮+毛玻璃*/
+.hope-ui-light .hope-c-PJLV-ikEIIxw-css{
+   background-color: rgba(255,255,255,0.2)!important;
+   backdrop-filter: blur(10px)!important;
+   padding: var(--hope-space-1)!important;
+}
+/*夜间模式 搜索按钮+毛玻璃*/
+.hope-ui-dark .hope-c-PJLV-ikEIIxw-css{
+    background-color: rgb(0 0 0 / 10%)!important;
+    backdrop-filter: blur(10px)!important;
+    padding: var(--hope-space-1)!important;
+}
+</style> 
+  <meta charset="utf-8" > 
+  <meta name="viewport" content="width=device-width, initial-scale=1" > 
+  <meta name="referrer" content="same-origin" > 
+  <meta name="generator" content="AList V3" > 
+  <meta name="theme-color" content="#000000" > 
+  <meta name="google" content="notranslate" > 
+  <meta name="apple-mobile-web-app-capable" content="yes" > 
+  <meta name="apple-mobile-web-app-title" content="AList" > 
+  <link rel="apple-touch-icon" href="https://jsd.nn.ci/gh/alist-org/logo@main/logo.png" > 
+  <script src="https://g.alicdn.com/IMM/office-js/1.1.5/aliyun-web-office-sdk.min.js" async=""></script> 
+  <link rel="shortcut icon" type="image/ico" href="https://jsd.nn.ci/gh/alist-org/logo@main/logo.svg" > 
+  <title>Loading...</title> 
+  <script>
       window.ALIST = {
         cdn: undefined,
         monaco_cdn: undefined,
@@ -30,12 +95,12 @@
         main_color: undefined,
       }
       window.__dynamic_base__ = window.ALIST.cdn || ""
-    </script>
-    
-    
-    <script type="module">try{import.meta.url;import("_").catch(()=>1);}catch(e){}window.__vite_is_modern_browser=true;</script>
-    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src= window.__dynamic_base__+e.getAttribute('data-src'),n.onload=function(){System.import( window.__dynamic_base__+document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
-    <script>
+    </script> 
+   
+   
+   <script type="module">try{import.meta.url;import("_").catch(()=>1);}catch(e){}window.__vite_is_modern_browser=true;</script>
+   <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src= window.__dynamic_base__+e.getAttribute('data-src'),n.onload=function(){System.import( window.__dynamic_base__+document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+   <script>
 (function(){
 var preloads = [{"parentTagName":"head","tagName":"script","attrs":{"type":"module","crossorigin":"","src":"/assets/index.a650f594.js"}},{"parentTagName":"head","tagName":"link","attrs":{"rel":"stylesheet","href":"/assets/index.15d8d646.css"}}];
 function setAttribute(target, attrs) {
@@ -59,15 +124,241 @@ document.getElementsByTagName(item.parentTagName)[0].appendChild(childNode);
 }
 })();
 </script>
-</head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+</head> 
+ <body> 
+  <noscript>
+   You need to enable JavaScript to run this app.
+  </noscript> 
+  <div id="root"></div> 
+   
+  <!-- customize body --> 
+  <script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script> 
+  <style>
+    /* 头像圆角 */
+    .header-left .hope-image {
+        border-radius: 50px !important;
+    }
 
+    /* 导航样式 */
+    .nav {
+        border-radius: 10px !important;
+        padding: 3px 10px;
+    }
+
+    /* 主体框架 */
+    .body {
+        min-height: 0% !important;
+    }
+
+    /* 隐藏底部信息 */
+    .footer {
+        display: none !important;
+    }
+
+    /* 底部盒子 */
+    .footer-box {
+        /* color: blueviolet; */
+        border-radius: 10px !important;
+        text-align: center !important;
+        padding: 10px;
+    }
+
+    /* 底部框架 */
+    .footer-body {
+        font-size: 13px !important;
+    }
+
+    /* 隐藏登录logo */
+    .hope-center .hope-stack .hope-flex .hope-image {
+        display: none !important;
+    }
+
+
+
+    /* 设置半透明 */
     
-    <!-- customize body -->
-    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
-    <script nomodule crossorigin id="vite-legacy-polyfill" data-src="/assets/polyfills-legacy.96e59239.js">!(function() {
+   
+    .hope-ui-light .hope-c-PJLV-ikSuVsl-css,
+    .hope-ui-light .footer-box {
+    //z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px !important;
+    background-attachment: fixed;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.2) !important;
+
+    }
+
+/* ------------------工具栏------------------ */
+
+.hope-ui-light .left-toolbar {
+    //z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-attachment: fixed;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.2) !important;
+
+    }
+
+
+/* ------------------夜间模式------------------ */
+
+ /* 设置半透明 */
+    .hope-ui-dark .left-toolbar,
+    .hope-ui-dark .nav,
+    .hope-ui-dark .obj-box,
+    .hope-ui-dark .hope-c-PJLV-iiuDLME-css,
+    .hope-ui-dark .footer-box {
+        background-color: rgba(32, 36, 37, 1) !important;
+        box-shadow: 0 0 5px 1px #000 !important;
+    }
+</style> 
+  <link href="//lib.baomitu.com/font-awesome/6.1.2/css/all.css" rel="stylesheet" > 
+  <script src="//lib.baomitu.com/jquery/3.3.1/jquery.min.js" charset="utf-8"></script> 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=String.prototype.replaceAll"></script> 
+  <div id="root"> 
+   <div class="footer-new hope-c-PJLV hope-c-PJLV-iicyfOA-css" style=""> 
+    <div class="body hope-c-PJLV hope-c-PJLV-iiHckfM-css"> 
+     <div class="footer-box hope-c-PJLV hope-c-PJLV-ikgiLXI-css"> 
+      <div class="hope-c-PJLV hope-c-PJLV-ihXHbZX-css"> 
+       <div class="footer-body"> 
+        <strong><span class="fas fa-layer-group"></span> 本站已存活：</strong> 
+        <strong id="day_show">279天 13时 39分 24秒</strong> 
+        <br> 
+        <strong> <span class="fas fa-copyright"></span> <a href="/@manage" target="_blank" rel="noopener noreferrer" one-link-mark="yes">Honey</a> <span>|</span> <span class="fab fa-github"></span> 由<a href="https://github.com/alist-org/alist" target="_blank" rel="noopener noreferrer" one-link-mark="yes">AList</a>驱动 <span>|</span> <span class="fas fa-clock"> <a href="https://tz.zi0.cc" target="_blank" one-link-mark="yes"><b>点击查看服务器状态</b></a> </span></strong> 
+        <br> 
+        <i class="fa-brands fa-telegram"></i> 
+        <strong><a href="https://t.me/mio_house" target="_blank" one-link-mark="yes"><b>点击加入Tg群</b></a></strong> 
+        <span>|</span> 
+        <strong><span class="fas fa-heart"></span> 页面载入耗时:</strong> 
+        <strong id="load_show">28ms</strong> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div style="height: 18px;"></div> 
+  <script>
+    var start = new Date().getTime();
+    function timestamp() {
+        let outcome = Math.round(new Date().getTime() / 1000).toString();
+        return outcome
+    }
+    function timer(intDiff) {
+        myTimer = window.setInterval(function () {
+            var day = 0,
+                hour = 0,
+                minute = 0,
+                second = 0;//时间默认值
+            if (intDiff > 0) {
+                day = Math.floor(intDiff / (60 * 60 * 24));
+                hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+                minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+                second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+            }
+            if (hour <= 9) hour = "0" + hour;
+            if (minute <= 9) minute = "0" + minute;
+            if (second <= 9) second = "0" + second;
+
+            $('#day_show').html(day + '天 ' + hour + '时 ' + minute + '分 ' + second + '秒');
+
+            var now = new Date();
+            var year = now.getFullYear();   // 得到年份
+            var month = now.getMonth();     // 得到月份
+            var date = now.getDate();       // 得到日期
+            var day = now.getDay();         // 得到周几
+            var hour = now.getHours();      // 得到小时
+            var minu = now.getMinutes();    // 得到分钟
+            var sec = now.getSeconds();     // 得到秒钟
+
+            if (hour > 0 && hour <= 2) text = "丑时";
+            else if (hour > 2 && hour <= 4) text = "寅时";
+            else if (hour > 4 && hour <= 6) text = "卯时";
+            else if (hour > 6 && hour <= 8) text = "辰时";
+            else if (hour > 8 && hour <= 10) text = "巳时";
+            else if (hour > 10 && hour <= 12) text = "午时";
+            else if (hour > 12 && hour <= 14) text = "未时";
+            else if (hour > 14 && hour <= 16) text = "申时";
+            else if (hour > 16 && hour <= 18) text = "酉时";
+            else if (hour > 18 && hour <= 20) text = "戌时";
+            else if (hour > 20 && hour <= 22) text = "亥时";
+            else text = "子时";
+            $('#time_show').html('<a href="https://www.beijing-time.org/shichen" target="_blank" rel="noopener noreferrer">' + text + '</a>');
+
+            intDiff++;
+        }, 1000);
+    }
+    var nowtime = timestamp(); // 现行时间戳
+    var mytime = 1658937600; // 设置安装时间（安装日期时间戳）
+    timer(nowtime - mytime); // 启动循环
+
+    // 页面加载完成后执行
+    $(function () {
+        // $('.footer-new').hide(); // 隐藏底部
+        $('.footer-new').show(); // 显示底部 
+    });
+
+$(function () {
+  setTimeout(function () {
+    $('#load_show').html((new Date().getTime() - start - 10000) + 'ms');
+  }, 10000);
+});
+</script> 
+  <style>
+
+.hope-c-PJLV-ikEIIxw-css {
+    border-radius: 24px; //搜索框圆角
+}
+
+
+.hope-ui-light .hope-c-PJLV-ikEIIxw-css {
+background: #e1f0ffeb;;//搜索框白天颜色
+}
+
+.hope-c-PJLV-ikEIIxw-css {
+border: 0px solid transparent;;//搜索框大小
+}
+
+
+/*白天搜索主体透明+毛玻璃*/
+.hope-ui-light .hope-c-hOYTCS {
+   background: rgba(255,255,255,0.2)!important;;
+   backdrop-filter: blur(10px)!important;;
+}
+/*白天搜索栏透明+毛玻璃*/
+.hope-ui-light .hope-c-kvTTWD-hYRNAb-variant-filled{
+   background: rgba(255,255,255,0.2)!important;;
+   backdrop-filter: blur(10px)!important;;
+}
+
+/*夜间搜索主体透明+毛玻璃*/
+.hope-ui-dark .hope-c-hOYTCS{
+	background: rgb(0 0 0 / 10%)!important;;
+    backdrop-filter: blur(10px)!important;;
+}
+/*夜间搜索栏透明+毛玻璃*/
+.hope-ui-dark .hope-c-kvTTWD-hYRNAb-variant-filled{
+	background: rgb(0 0 0 / 10%)!important;;
+    backdrop-filter: blur(10px)!important;;
+}
+/*搜索文件路径字体颜色*/
+.hope-c-PJLV-ibveQmV-css {
+    color: #e6e6e6;;
+    word-break: break-all;;
+}
+
+</style>   
+   <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+   <script nomodule crossorigin id="vite-legacy-polyfill" data-src="/assets/polyfills-legacy.96e59239.js">!(function() {
       var e = document.createElement('script')
       e.src =  window.__dynamic_base__ + document.getElementById('vite-legacy-polyfill').getAttribute('data-src');
       e.onload = function() {
@@ -75,6 +366,6 @@ document.getElementsByTagName(item.parentTagName)[0].appendChild(childNode);
       };
       document.body.appendChild(e)
     })();</script>
-    <script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy.2d411b42.js"></script>
-  </body>
+   <script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy.2d411b42.js"></script>
+ </body>
 </html>
